@@ -1,0 +1,34 @@
+# Forex CHoCH Detection System Configuration
+
+broker:
+  type: "oanda"
+  environment: "practice"
+  symbols:
+    - "EUR/USD"
+    - "GBP/USD"
+    - "USD/JPY"
+  api_key: ""
+  account_id: ""
+
+notifications:
+  telegram:
+    enabled: true
+    bot_token: ""
+    chat_id: ""
+  
+  desktop_enabled: true
+  email_enabled: false
+  
+  smtp_host: "smtp.gmail.com"
+  smtp_port: 587
+  smtp_user: ""
+  smtp_password: ""
+
+pattern:
+  swing_depth: 5
+  tolerance: 0.001
+  min_swing_size: 0.0005
+
+log_level: "INFO"
+redis_url: "redis://localhost:6379"
+database_url: ""
